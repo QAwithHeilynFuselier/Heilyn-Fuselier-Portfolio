@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-surface text-zinc-300 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  ::selection {
+    @apply bg-zinc-700 text-white;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-500;
+  }
+
+  .section-heading {
+    @apply text-xl font-medium tracking-tight text-zinc-100 sm:text-2xl;
+  }
+
+  .body-muted {
+    @apply text-[15px] leading-[1.75] text-zinc-400 sm:text-base;
+  }
+
+  .section-block {
+    @apply border-t border-surface-border;
+  }
+
+  .card-surface {
+    @apply rounded-lg border border-surface-border bg-surface-raised;
+  }
+
+  .case-study {
+    @apply card-surface p-6 sm:p-8;
+  }
+
+  .case-study-label {
+    @apply text-[11px] font-medium uppercase tracking-wider text-zinc-500;
+  }
+
+  .case-study-value {
+    @apply mt-1.5 text-[15px] leading-[1.7] text-zinc-400;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-950 transition-colors duration-200 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-300 transition-colors duration-200 hover:border-zinc-600 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-md px-3 py-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500;
+  }
+
+  .nav-link {
+    @apply text-sm text-zinc-400 transition-colors duration-200 hover:text-zinc-100;
+  }
+
+  .tech-pill {
+    @apply rounded border border-zinc-800 px-2 py-0.5 text-xs text-zinc-500;
+  }
+
+  .diagram-surface {
+    @apply rounded-md border border-zinc-800/80 bg-zinc-950/50 p-4;
+  }
+
+  .diagram-node {
+    @apply whitespace-nowrap rounded border border-zinc-800 bg-zinc-900 px-2.5 py-1.5 font-mono text-[11px] text-zinc-400;
+  }
+
+  .list-minimal {
+    @apply space-y-3 text-[15px] leading-[1.7] text-zinc-400;
+  }
+
+  .list-minimal li {
+    @apply relative pl-4;
+  }
+
+  .list-minimal li::before {
+    content: '—';
+    @apply absolute left-0 text-zinc-600;
+  }
+}
