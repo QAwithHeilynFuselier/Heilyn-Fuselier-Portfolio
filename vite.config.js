@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite';
+import { cloudflare } from '@cloudflare/vite-plugin';
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-export default defineConfig({
-  plugins: [react()],
-  base: '/Heilyn-Fuselier-Portfolio/',
-});
+export default defineConfig(({ mode }) => ({
+  plugins: [react(), cloudflare()],
+  base: mode === 'github' ? '/Heilyn-Fuselier-Portfolio/' : '/',
+}));

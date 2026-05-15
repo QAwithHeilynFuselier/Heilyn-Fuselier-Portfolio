@@ -20,24 +20,22 @@ npm run build
 npm run preview
 ```
 
-## Deploy to GitHub Pages
+## Deploy
 
-After changing the site:
+**Cloudflare Pages / Workers** (recommended):
 
 ```bash
+npm install
 npm run deploy
 ```
 
-Then in GitHub: **Settings → Pages** — use **one** of these (both work):
+**GitHub Pages** (legacy):
 
-| Source | Branch | Folder |
-|--------|--------|--------|
-| Option A | `gh-pages` | `/ (root)` |
-| Option B | `main` | `/docs` |
+```bash
+npm run deploy:github
+```
 
-**Do not** use `main` + `/ (root)` — that serves source code and shows a blank page.
-
-If the site looks blank, open DevTools → Network and confirm JS/CSS load from `/Heilyn-Fuselier-Portfolio/assets/...`.
+Settings → Pages → `gh-pages` / root **or** `main` / `docs` — not `main` / root (blank page).
 
 ## Repository
 
