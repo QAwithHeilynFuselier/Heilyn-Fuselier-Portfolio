@@ -96,4 +96,36 @@
     content: '—';
     @apply absolute left-0 text-zinc-600;
   }
+
+  .personal-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #6a0dad;
+    color: #fff;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .personal-logo:hover {
+    background-color: #5a0b94;
+    color: #fff;
+  }
+
+  .personal-logo:focus-visible {
+    outline: 2px solid #a855f7;
+    outline-offset: 2px;
+  }
 }

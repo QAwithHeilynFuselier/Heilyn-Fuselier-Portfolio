@@ -2,6 +2,8 @@
 
 Minimal portfolio built with React, Vite, and Tailwind CSS.
 
+**Live site:** [https://qawithheilynfuselier.github.io/Heilyn-Fuselier-Portfolio/](https://qawithheilynfuselier.github.io/Heilyn-Fuselier-Portfolio/)
+
 ## Development
 
 ```bash
@@ -18,8 +20,8 @@ npm run build
 npm run preview
 ```
 
-Deploy the `dist/` folder to any static host (Netlify, Vercel, GitHub Pages, etc.).
+Pushes to `main` deploy automatically via GitHub Actions (Settings → Pages → Source: **GitHub Actions**).
 
-## Previous version
+## Repository
 
-The Bootstrap single-page version is preserved as `index.legacy.html` when present.
+[github.com/QAwithHeilynFuselier/Heilyn-Fuselier-Portfolio](https://github.com/QAwithHeilynFuselier/Heilyn-Fuselier-Portfolio)

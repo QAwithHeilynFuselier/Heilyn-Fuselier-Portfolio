@@ -10,14 +10,19 @@ export default function Navbar({ onContactClick }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface-border bg-surface">
-      <nav
-        className="mx-auto flex max-w-content items-center justify-between px-5 py-4 sm:px-8"
-        aria-label="Main"
-      >
-        <a href="#" className="text-sm text-zinc-200">
-          Heilyn Fuselier
-        </a>
+    <>
+      <a href="#" className="personal-logo" aria-label="Heilyn Fuselier — inicio">
+        HF
+      </a>
+      <header className="sticky top-0 z-50 border-b border-surface-border bg-surface">
+        <nav
+          className="mx-auto flex max-w-content items-center justify-between py-4 pl-[4.75rem] pr-5 sm:pl-[5.25rem] sm:pr-8"
+          aria-label="Main"
+        >
+          <a href="#" className="hidden text-sm text-zinc-200 sm:inline">
+            Heilyn Fuselier
+          </a>
+          <span className="sm:hidden" aria-hidden="true" />
 
         <ul className="hidden items-center gap-7 md:flex">
           {links.map((link) => (
@@ -74,6 +79,7 @@ export default function Navbar({ onContactClick }) {
           </ul>
         </div>
       )}
-    </header>
+      </header>
+    </>
   );
 }
