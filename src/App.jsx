@@ -7,6 +7,7 @@ import CurrentlyWorking from './components/CurrentlyWorking';
 import Expertise from './components/Expertise';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import HomeFeatures from './components/HomeFeatures';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 
@@ -26,7 +27,8 @@ export default function App() {
       </a>
       <Navbar onContactClick={openContact} />
       <main id="main">
-        <Hero onContactClick={openContact} />
+        <Hero />
+        <HomeFeatures />
         <About />
         <CurrentlyWorking />
         <Projects />
