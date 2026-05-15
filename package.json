@@ -9,7 +9,8 @@
     "build:github": "vite build --mode github",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
-    "deploy:github": "npm run build:github && gh-pages -d dist -t"
+    "sync:docs": "npm run build:github && node scripts/sync-docs.mjs",
+    "deploy:github": "npm run sync:docs && gh-pages -d dist -t"
   },
   "dependencies": {
     "react": "^18.3.1",

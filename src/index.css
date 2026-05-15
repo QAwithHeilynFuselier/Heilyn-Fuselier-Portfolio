@@ -101,14 +101,14 @@
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1000;
+    z-index: 1100;
     width: 45px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    background-color: #6a0dad;
+    background-color: #6a0dad; /* brand mark — GitHub Pages + Cloudflare */
     color: #fff;
     font-family: Inter, system-ui, sans-serif;
     font-size: 0.95rem;
