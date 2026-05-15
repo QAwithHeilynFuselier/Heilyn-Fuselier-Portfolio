@@ -20,7 +20,24 @@ npm run build
 npm run preview
 ```
 
-Pushes to `main` deploy automatically via GitHub Actions (Settings → Pages → Source: **GitHub Actions**).
+## Deploy to GitHub Pages
+
+After changing the site:
+
+```bash
+npm run deploy
+```
+
+Then in GitHub: **Settings → Pages** — use **one** of these (both work):
+
+| Source | Branch | Folder |
+|--------|--------|--------|
+| Option A | `gh-pages` | `/ (root)` |
+| Option B | `main` | `/docs` |
+
+**Do not** use `main` + `/ (root)` — that serves source code and shows a blank page.
+
+If the site looks blank, open DevTools → Network and confirm JS/CSS load from `/Heilyn-Fuselier-Portfolio/assets/...`.
 
 ## Repository
 
